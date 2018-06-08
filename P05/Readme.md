@@ -2,7 +2,7 @@
 
 Welcome to the Team 5190 training lessons in programming an FRC robot. This chapter concerns the problem of path tracking. Path tracking is an important aspect of every autonomous routine as it ensures a fast and accurate method of getting from point A to point B.
 
-First download and run ```MP Generator.jar```. Using this tool you an generate a trajectory by supllying waypoints. Note that you can change the max velocity, acceleration, and jerk. Make sure to select:
+First download and run ```MP Generator.jar```. Using this tool you an generate a trajectory by supplying waypoints. Note that you can change the max velocity, acceleration, and jerk. Make sure to select:
 
 * ```Imperial``` for the ```Units```
 * ```Tank``` for the ```Drive Base```
@@ -13,7 +13,7 @@ First download and run ```MP Generator.jar```. Using this tool you an generate a
 * ```60.0``` for the ```Jerk``` (Max jerk along the path)
 * ```Cubic``` for the ```Fit Method``` (The degree of polynomial used to interpolate the waypoints)
 
-Now you can add waypoints by clicking the ```Add Waypoint`` button. Here you may specify the x-coordinate, a y-coordinate, and the angle the robot should be at. After adding each waypoint, you will see the path on the right.
+Now you can add waypoints by clicking the ```Add Point``` button. Here you may specify the x-coordinate, the y-coordinate, and the angle the robot should be at. After adding each waypoint, you will see the path on the right.
 
 For our purposes, add two waypoints with the specified x, y, and angle:
 
@@ -32,7 +32,7 @@ Navigate to where you saved the trajectory above. You should see three files nam
 * ```Test_source_detailed.csv```
 * ```Test_right_detailed.csv```
 
-If you do not have these files, or if you have more than 6 files, please reset the module and start again.
+If you do not have these files, or if you have more than 3 files, please reset the module and start again.
 
 Open the ```build.gradle``` file for P05. You will see a block of code that looks like this:
 
@@ -47,6 +47,6 @@ artifact('Test', FileCollectionArtifact) {
 This deploys all files in the ```src/main/resources/Test``` folder to ```/home/lvuser/paths/Test``` on the RoboRIO file system. This makes it easier for the code on the RIO to access the path files.
 
 
-Now open IntelliJ IDEA and hit the ```open``` option. Navigate to the P05 directory. It should have the Gradle symbol. Once the project is open, head over to ```src/main/kotlin/frc/team5190/drive/FollowPathCommand.kt```. This file contains the code to follow the path that you generated above. Every line of code is explained in the comments. Then head over to ```Robot.kt``` and see how the command is called on ```autonomousInit()```
+Now open IntelliJ IDEA and hit the ```open``` option. Navigate to the P05 directory. It should have the Gradle symbol. Once the project is open, head over to ```src/main/kotlin/frc/team5190/robot/drive/FollowPathCommand.kt```. This file contains the code to follow the path that you generated above. Every line of code is explained in the comments. Then head over to ```Robot.kt``` and see how the command is called on ```autonomousInit()```
 
 Finally, generate a path for "Cross Auto" where the robot starts in the same starting position as above (```x: 1.50, y: 23.75, angle: 0```) and heads over the to the right side of the scale. You will need to use more than 3 waypoints for this path. Then try to write the ```PathFollower.kt``` class by yourself. Call the command with the Cross Auto path as arguments and see how well the robot follows the path. Good Luck!
