@@ -1,0 +1,6 @@
+
+*.xml
+*.iml
+P05/.gradle
+p05/build
+
