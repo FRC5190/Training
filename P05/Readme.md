@@ -20,7 +20,7 @@ For our purposes, add two waypoints with the specified x, y, and angle:
 * ```x: 1.50, y: 23.75, angle: 0```
 * ```x: 23.0, y: 22.00, angle: -30```
 
-![This is what your generator should look like.](image.png)
+![This is what your generator should look like.](image.png?raw=true "This is what your generator should look like.")
 
 Hit Ctrl-E and export the trajectory to the ```P05/src/main/resources/Test``` folder with the name ```Test``` in the dialog box.  
 
