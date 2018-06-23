@@ -12,7 +12,7 @@ Next, open the project in IntelliJ by clicking on `Open`. Navigate to the P02 ro
 
 You might see a message in the bottom right corner about Gradle. Click `Enable Auto Import`. This means that whenever a `build.gradle` file is changed, IntelliJ IDEA will automatically rebuild the project.
 
-The main Robot class inherits from another class called `TimedRobot`. This is the class that contains the default `autonomousInit()`, `teleopPeriodic()`,etc.  methods:
+The main Robot class inherits from another class called `TimedRobot`. This is the class that contains the default `autonomousInit()`, `teleopPeriodic()`, etc.  methods:
 
 * `robotInit()` is called once when the code is started up.
 * `robotPeriodic()` is always called every 20 ms regardless of whether enabled or disabled.
@@ -33,7 +33,7 @@ You should see a window similar to the one below once everything has completed. 
 
 ![IntelliJ](images/idea2.png?raw=true "IntelliJ")
 
-Now open the Console on the FRC Driver Station by clicking on the Gear Icon to the right of the Battery Voltage Indicator.. You should see the "Hello World" message printing every 5 seconds.
+Now open the Console on the FRC Driver Station by clicking on the Gear Icon to the right of the Battery Voltage Indicator. You should see the "Hello World" message printing every 5 seconds.
 
 ![Console](images/console.png?raw=true "Console")
 
