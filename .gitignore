@@ -2,5 +2,7 @@
 *.xml
 *.iml
 P05/.gradle
-p05/build
+P05/build
 
+P02/.gradle
+p02/build
