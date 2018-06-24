@@ -46,16 +46,16 @@ It is time for us to try a simple program. The P02 folder comes with the simples
 1. Now that you have all the code and dependencies on your laptop, connect your laptop to the robot wireless network. Make sure that you have the FRC Driver Station open, and that you are connected to the robot. 
 
 1. To deploy your code onto the robot, click on the `Gradle` tool button on the right side of the screen in IntelliJ. Then select the `deploy` task under `P02/Tasks/embeddedtools`. Double click on this item. A new task will open in a console window and code will begin to deploy to the RoboRIO. Make sure you are connected to the Robot over Wi-Fi.
-
- ![IntelliJ](images/idea1.png?raw=true "IntelliJ")
+   
+   ![IntelliJ](images/idea1.png?raw=true "IntelliJ")
 
 1. You should see a window similar to the one below once everything has completed. Also note the run configuration at the top right of the screen. From now onwards, you can click the Play button to deploy code to the RoboRIO.
 
- ![IntelliJ](images/idea2.png?raw=true "IntelliJ")
+   ![IntelliJ](images/idea2.png?raw=true "IntelliJ")
 
 1. Now open the Console on the FRC Driver Station by clicking on the Gear Icon to the right of the Battery Voltage Indicator. You should see the "Hello World" message printing every 5 seconds.
 
-![Console](images/console.png?raw=true "Console")
+   ![Console](images/console.png?raw=true "Console")
 
 ## Structure of the robot program
 
