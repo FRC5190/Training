@@ -18,15 +18,16 @@ FRC robots use Network Instrument's [roboRIO](https://forums.ni.com/t5/FIRST-Rob
 1. Switch on your FRC robot, and wait for a few minutes for its wireless network to be ready. Someone on your team should have already wired up the wireless network router to the roboRIO. And, your laptop should discover the wireless network. Connect your laptop to the robot's wireless network. Note that when your laptop is connected to the wireless network of the robot, it won't have any Internet access.
 
 1. Launch FRC Driver Station on your laptop. The Driver Station should automatically connect to the robot's wireless network. The primary indication of this is that you will see the robot's battery voltage appear on your Driver Station. If this does not happen, check one of the following:
- * Check whether your laptop is connected to the robot's wireless network.
- * Check if your firewall is blocking the connection by disabling the firewall.
 
+     * Check whether your laptop is connected to the robot's wireless network.
+     * Check if your firewall is blocking the connection by disabling the firewall.
+    
 1. You need to ensure that that your roboRIO is correctly imaged. In other words, it should have the correct operating system and libraries to run your programs. With the FRC Driver Station connected to your robot, check the connection tab and verify the version of the RIO image as shown below.
 
- ![DS](images/ds.png?raw=true "DS")
-
- If it says 2018_v16 or above, you are good to go. Otherwise, follow these [instructions](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/144984-imaging-your-roborio) to image the RoboRIO. You will need an appropriate USB cable for this step. If you re-image the roboRIO, wait for the controller to restart, and then ensure that you can connect from your laptop's FRC Driver Station to the robot.
-
+     ![DS](images/ds.png?raw=true "DS")
+    
+    If it says 2018_v16 or above, you are good to go. Otherwise, follow these [instructions](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/144984-imaging-your-roborio) to image the RoboRIO. You will need an appropriate USB cable for this step. If you re-image the roboRIO, wait for the controller to restart, and then ensure that you can connect from your laptop's FRC Driver Station to the robot.
+    
 ## Build and deploy code using GradleRIO
 
 It is time for us to try a simple program. The P02 folder comes with the simplest **Hello world** program. Let us build this program and deploy it to the robot using IntelliJ IDE. In all of our lessons, we use two tools - Gradle and GradleRIO - to build and deploy our code. [Gradle](https://gradle.org/) is a popular build tool for Java programs. [GradleRIO](https://github.com/wpilibsuite/GradleRIO) is a Gradle plugin for FRC programs that has been written specifically by the FRC community. You do not have to understand Gradle or GradleRIO to follow through these lessons. However, for more advanced work, it is recommended that you become familiar with these tools.
