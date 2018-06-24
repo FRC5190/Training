@@ -46,6 +46,14 @@ IntelliJ is a popular integrated development environment (IDE) for Java develope
 1. When you open IntelliJ for the first time, you will be asked to select a theme. Select one. You will also be asked to select any additional plugins. You do not need any.
 1. If you are able to launch the IDE, then you have completed this step successfully.
 
+## Install Git for Windows
+
+In order to download the lessons and code from this repository, you need to have Git tool for Windows installed on your machine.
+
+1. Get the latest version of Git for Windows from this [location](https://git-scm.com/download/win).
+1. Launch the installer, run through the steps accepting defaults.
+1. To test the installation, open a command prompt and type `git --version`. If you see the version of Git, then you are all set.
+
 ## Install FRC Update Suite
 
 The `FRC Update Suite` is a set of tools necessary for FRC programming. It includes the `FRC driverstation` needed for communication between your laptop and the robot. Downloading and installing the update suite can take an hour or more.

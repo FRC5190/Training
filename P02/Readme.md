@@ -1,23 +1,23 @@
 # Programming Lesson 02 - Hello world
 
-In this lesson, we will deploy our first program to the Robot and make it print "Hello world". By the time you complete this lesson, you will understand the following:
+In this lesson, we will deploy our first program to the Robot to print "Hello world". By the time you complete this lesson, you will learn about:
 
-* Ensure that the robot has the correct software to run your programs
+* Ensuring that the robot has the correct software to run your programs
 * Basic structure of a FRC program
-* Use GradleRio to build and deploy your program
-* Tele-operated and autonomous modes of the robot
-* Use the FRC Driver Station to connect to the robot and switch between the two modes
-* Run timed operations on the robot
+* Using GradleRio to build and deploy your program
+* Teleop and autonomous modes of the robot
+* Using the FRC Driver Station to connect to the robot and switch between the two modes
+* Running timed operations on the robot
 
-Before beginning this lesson, make sure that you have completed all the steps in [P01](../P01/readme.md). Also, you need a FRC robot that you can work with. For the purpose of this lesson, all that is needed in your robot is a roboRIO controller, power supply, and a wireless network router. You won't really be driving the robot in this lesson, and hence won't need any motors or drive train yet.
+Before beginning this lesson, make sure that you have completed all the steps in [P01](../P01). Also, you need a FRC robot that you can work with. For the purpose of this lesson, all that is needed in your robot is a roboRIO controller, power supply, and a wireless network router. You won't really be driving the robot in this lesson, and hence won't need any motors or drive train yet.
 
 ## Connecting to roboRIO
 
 FRC robots use Network Instrument's [roboRIO](https://forums.ni.com/t5/FIRST-Robotics-Competition/roboRIO-Details-and-Specifications/ta-p/3494658) to run your programs and to communicate with all the hardware of the robot. In this section you will connect from your laptop's FRC Driver Station to the roboRIO controller using the robot's wireless router.
 
-1. Switch on your FRC robot, and wait for a few minutes for its wireless network to be ready. Someone on your team should have already wired up the wireless network router to the roboRIO. And, your laptop should discover the wireless network. Connect your laptop to the robot's wireless network. Note that when your laptop is connected to the wireless network of the robot, it won't have any Internet access.
+1. Switch on your FRC robot, and wait for a few minutes for its wireless network to be ready and for your laptop to discover that network. Connect your laptop to the robot's wireless network. Note that when your laptop is connected to the wireless network of the robot, it won't have any Internet access.
 
-1. Launch FRC Driver Station on your laptop. The Driver Station should automatically connect to the robot's wireless network. The primary indication of this is that you will see the robot's battery voltage appear on your Driver Station. If this does not happen, check one of the following:
+1. Launch FRC Driver Station on your laptop. The Driver Station should automatically connect to the robot. The primary indication of this is that you will see the robot's battery voltage appear on your Driver Station. If this does not happen, check one of the following:
 
      * Check whether your laptop is connected to the robot's wireless network.
      * Check if your firewall is blocking the connection by disabling the firewall.
@@ -34,7 +34,7 @@ It is time for us to try a simple program. The P02 folder comes with the simples
 
 1. Disconnect your laptop from the robot, and connect to the Internet.
 
-1. Clone this entire **Training** repository from GitHub to your desktop using Git by running the following from command prompt:
+1. Clone this entire **Training** repository from GitHub to your desktop using Git by running the following from command prompt (Pick an appropriate directory where you want to clone the repository, for example `C:\robotics`:
    ```
    git clone https://github.com/5190GreenHopeRobotics/Training
    ```
@@ -46,7 +46,7 @@ It is time for us to try a simple program. The P02 folder comes with the simples
 
 1. Now that you have all the code and dependencies on your laptop, connect your laptop to the robot wireless network. Make sure that you have the FRC Driver Station open, and that you are connected to the robot. 
 
-1. To deploy your code onto the robot, click on the `Gradle` tool button on the right side of the screen in IntelliJ. Then select the `deploy` task under `P02/Tasks/embeddedtools`. Double click on this item. A new task will open in a console window and code will begin to deploy to the RoboRIO. Make sure you are connected to the Robot over Wi-Fi.
+1. To deploy your code onto the robot, click on the `Gradle` tool button on the right side of the screen in IntelliJ. Then select the `deploy` task under `P02/Tasks/embeddedtools`. Double click on this item. A new task will open in a console window and code will begin to deploy to the RoboRIO.
    
    ![IntelliJ](images/idea1.png?raw=true "IntelliJ")
 
@@ -60,7 +60,7 @@ It is time for us to try a simple program. The P02 folder comes with the simples
 
 ## Structure of the robot program
 
-1. Navigate through the file tree to `src/main/resources/frc/team5190/robot/Robot.kt`. This is the main robot file. The main Robot class inherits from another class called `TimedRobot`. This is the class that contains the default `autonomousInit()`, `teleopPeriodic()`, etc.  methods:
+1. Navigate through the file tree to `src/main/resources/frc/team5190/robot/Robot.kt`. This is the main robot file. The main Robot class inherits from another class called `TimedRobot`. This is the class that tells the robot what to do under various conditions:
 
     * `robotInit()` is called once when the code is started up.
     * `robotPeriodic()` is always called every 20 ms regardless of whether enabled or disabled.
@@ -75,8 +75,6 @@ It is time for us to try a simple program. The P02 folder comes with the simples
 
 1. To understand some of the above methods, try to make the following changes to your program, then deploy and test it.
 
-    * Make the program print `Hello world` every 5 seconds, only when the robot is in autonomous mode.
-    * Make the program print `Hello world` every 5 seconds, only when the robot is in teleop mode.
-    * Make the program print `Hello world` every 20 ms regardless of enabled or disabled.
-    * Make the program print `Hello world` every 20 ms for 5 seconds during autonomous and stop printing afterwards.
-    
+    * Make the program print `Hello world` every 5 seconds, only when the robot is in autonomous mode. Hint: Move the code inside `robotPeriodic` to `autonomousPeriodic`.
+    * Make the program print `Hello world` every 5 seconds, only when the robot is in teleop mode. Hint: Move the code inside `robotPeriodic` to `autonomousPeriodic`.
+    * Make the program print `Hello world` every 20 ms for 5 seconds during autonomous and stop printing afterwards. Hint: Add logic to check how long the code has been running.
