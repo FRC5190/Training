@@ -18,15 +18,14 @@ FRC robots use Network Instrument's [roboRIO](https://forums.ni.com/t5/FIRST-Rob
 1. Switch on your FRC robot, and wait for a few minutes for its wireless network to be ready. Someone on your team should have already wired up the wireless network router to the roboRIO. And, your laptop should discover the wireless network. Connect your laptop to the robot's wireless network. Note that when your laptop is connected to the wireless network of the robot, it won't have any Internet access.
 
 1. Launch FRC Driver Station on your laptop. The Driver Station should automatically connect to the robot's wireless network. The primary indication of this is that you will see the robot's battery voltage appear on your Driver Station. If this does not happen, check one of the following:
-
  * Check whether your laptop is connected to the robot's wireless network.
  * Check if your firewall is blocking the connection by disabling the firewall.
 
 1. You need to ensure that that your roboRIO is correctly imaged. In other words, it should have the correct operating system and libraries to run your programs. With the FRC Driver Station connected to your robot, check the connection tab and verify the version of the RIO image as shown below.
 
-![DS](images/ds.png?raw=true "DS")
+ ![DS](images/ds.png?raw=true "DS")
 
-If it says 2018_v16 or above, you are good to go. Otherwise, follow these [instructions](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/144984-imaging-your-roborio) to image the RoboRIO. You will need an appropriate USB cable for this step. If you re-image the roboRIO, wait for the controller to restart, and then ensure that you can connect from your laptop's FRC Driver Station to the robot.
+ If it says 2018_v16 or above, you are good to go. Otherwise, follow these [instructions](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/144984-imaging-your-roborio) to image the RoboRIO. You will need an appropriate USB cable for this step. If you re-image the roboRIO, wait for the controller to restart, and then ensure that you can connect from your laptop's FRC Driver Station to the robot.
 
 ## Build and deploy code using GradleRIO
 
@@ -35,10 +34,10 @@ It is time for us to try a simple program. The P02 folder comes with the simples
 1. Disconnect your laptop from the robot, and connect to the Internet.
 
 1. Clone this entire **Training** repository from GitHub to your desktop using Git by running the following from command prompt:
-```
-git clone https://github.com/5190GreenHopeRobotics/Training
-```
-Now, you should have the entire contents of this repository on your laptop.
+ ```
+ git clone https://github.com/5190GreenHopeRobotics/Training
+ ```
+ Now, you should have the entire contents of this repository on your laptop.
 
 1. Launch IntelliJ from the start menu. Open the project in IntelliJ by clicking on `Open`. Navigate to and click on the P02 folder. Select 'OK' on the import dialog. This should open the project in your IDE. The first time you open the project, it will sync all the dependencies needed for your project. This can take a while the first time.
 
@@ -48,11 +47,11 @@ Now, you should have the entire contents of this repository on your laptop.
 
 1. To deploy your code onto the robot, click on the `Gradle` tool button on the right side of the screen in IntelliJ. Then select the `deploy` task under `P02/Tasks/embeddedtools`. Double click on this item. A new task will open in a console window and code will begin to deploy to the RoboRIO. Make sure you are connected to the Robot over Wi-Fi.
 
-![IntelliJ](images/idea1.png?raw=true "IntelliJ")
+ ![IntelliJ](images/idea1.png?raw=true "IntelliJ")
 
 1. You should see a window similar to the one below once everything has completed. Also note the run configuration at the top right of the screen. From now onwards, you can click the Play button to deploy code to the RoboRIO.
 
-![IntelliJ](images/idea2.png?raw=true "IntelliJ")
+ ![IntelliJ](images/idea2.png?raw=true "IntelliJ")
 
 1. Now open the Console on the FRC Driver Station by clicking on the Gear Icon to the right of the Battery Voltage Indicator. You should see the "Hello World" message printing every 5 seconds.
 

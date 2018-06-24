@@ -56,6 +56,6 @@ The `FRC Update Suite` is a set of tools necessary for FRC programming. It inclu
 
 2. Once the installation is complete, launch the FRC Driver Station from the Start menu. Select **Settings** and enter your FRC team number as shown below:
 
-![Driver Station settings](images/driverstation.png)
+ ![Driver Station settings](images/driverstation.png)
 
 Congratulations!! You have set up your laptop as much as you can without having a real robot. Before beginning the next lesson, check with your team and find a FRC robot that you can work with.
