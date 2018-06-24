@@ -34,10 +34,10 @@ It is time for us to try a simple program. The P02 folder comes with the simples
 1. Disconnect your laptop from the robot, and connect to the Internet.
 
 1. Clone this entire **Training** repository from GitHub to your desktop using Git by running the following from command prompt:
- ```
- git clone https://github.com/5190GreenHopeRobotics/Training
- ```
- Now, you should have the entire contents of this repository on your laptop.
+   ```
+   git clone https://github.com/5190GreenHopeRobotics/Training
+   ```
+   Now, you should have the entire contents of this repository on your laptop.
 
 1. Launch IntelliJ from the start menu. Open the project in IntelliJ by clicking on `Open`. Navigate to and click on the P02 folder. Select 'OK' on the import dialog. This should open the project in your IDE. The first time you open the project, it will sync all the dependencies needed for your project. This can take a while the first time.
 
