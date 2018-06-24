@@ -24,7 +24,7 @@ Here is an outline of the lessons:
 1. **Path tracking** is an core element of many robots and involves making the robot track a pre-defined path. You will learn the basic elements of path tracking and the complexity of doing this well.
 1. **Object recognition** sets up a simple vision pipeline integrated with your robot to recognize objects of a certain color.
 
-In this first lesson, you do not need any robot. We will help you started with the prerequisites on your laptop. You need a Windows 10 laptop wth 4GB of memory or more, and 50GB or more of free disk space. You cannot use a Mac for these lessons. Follow the steps below.
+In this first lesson, you do not need any robot. We will help you started with the prerequisites on your laptop. You need a **Windows 10** laptop wth 4GB of memory or more, and 50GB or more of free disk space. You cannot use a Mac for these lessons. Follow the steps below.
 
 ## Install JDK 8
 
@@ -52,5 +52,10 @@ The `FRC Update Suite` is a set of tools necessary for FRC programming. It inclu
 
 **Note:** You will need an installation key to install this software. Contact your programming team and get the key, before proceeding with this step. Once you get the key, protect it just like any password.
 
-1. Follow the steps in this [location](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/599670-installing-the-frc-update-suite-all-languages) to install FRC Update Suite.
+1. Follow the steps in this [location](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/599670-installing-the-frc-update-suite-all-languages) to install FRC Update Suite. It is important that you follow these steps diligently.
 
+2. Once the installation is complete, launch the FRC Driver Station from the Start menu. Select **Settings** and enter your FRC team number as shown below:
+
+![Driver Station settings](images/driverstation.png)
+
+Congratulations!! You have set up your laptop as much as you can without having a real robot. Before beginning the next lesson, check with your team and find a FRC robot that you can work with.
