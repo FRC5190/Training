@@ -61,20 +61,21 @@ It is time for us to try a simple program. The P02 folder comes with the simples
 
 1. Navigate through the file tree to `src/main/resources/frc/team5190/robot/Robot.kt`. This is the main robot file. The main Robot class inherits from another class called `TimedRobot`. This is the class that contains the default `autonomousInit()`, `teleopPeriodic()`, etc.  methods:
 
-* `robotInit()` is called once when the code is started up.
-* `robotPeriodic()` is always called every 20 ms regardless of whether enabled or disabled.
-* `autonomousInit()` is called when autonomous is enabled.
-* `autonomousPeriodic()` is called every 20 ms during autonomous.
-* `teleopInit()` is called when teleop is enabled.
-* `teleopPeriodic()` is called every 20 ms during teleop.
-* `disabledInit()` is called when the robot is disabled.
-* `disabledPeriodic()` is called every 20 ms when the robot is disabled.
-
-Note that not all of these methods have been implemented in the `Robot` class. You should override and implement these methods as you find uses for them.
+    * `robotInit()` is called once when the code is started up.
+    * `robotPeriodic()` is always called every 20 ms regardless of whether enabled or disabled.
+    * `autonomousInit()` is called when autonomous is enabled.
+    * `autonomousPeriodic()` is called every 20 ms during autonomous.
+    * `teleopInit()` is called when teleop is enabled.
+    * `teleopPeriodic()` is called every 20 ms during teleop.
+    * `disabledInit()` is called when the robot is disabled.
+    * `disabledPeriodic()` is called every 20 ms when the robot is disabled.
+    
+    Note that not all of these methods have been implemented in the `Robot` class. You should override and implement these methods as you find uses for them.
 
 1. To understand some of the above methods, try to make the following changes to your program, then deploy and test it.
 
-* Make the program print `Hello world` every 5 seconds, only when the robot is in autonomous mode.
-* Make the program print `Hello world` every 5 seconds, only when the robot is in teleop mode.
-* Make the program print `Hello world` every 20 ms regardless of enabled or disabled.
-* Make the program print `Hello world` every 20 ms for 5 seconds during autonomous and stop printing afterwards.
+    * Make the program print `Hello world` every 5 seconds, only when the robot is in autonomous mode.
+    * Make the program print `Hello world` every 5 seconds, only when the robot is in teleop mode.
+    * Make the program print `Hello world` every 20 ms regardless of enabled or disabled.
+    * Make the program print `Hello world` every 20 ms for 5 seconds during autonomous and stop printing afterwards.
+    
