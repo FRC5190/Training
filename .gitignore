@@ -1,8 +1,15 @@
 
 *.xml
 *.iml
-P05/.gradle
-P05/build
+
 
 P02/.gradle
-p02/build
+P02/build
+
+P03/.gradle
+P03/build
+
+
+
+P05/.gradle
+P05/build
