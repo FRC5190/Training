@@ -12,7 +12,7 @@ These lessons do not help you with:
 
 * **Teaching the basics of programming:** If you are new to programming, follow the lesson plan and tutorials on Java from [here](https://docs.oracle.com/javase/tutorial/java/) first. You are expected to understand basic elements of programming in Java - classes, objects, inheritance, loops, and conditions.
 * **Teaching the Kotlin programming language:** Developers with Java background can easily start using Kotlin. Try the tutorials [here](https://kotlinlang.org/docs/tutorials/) for learning Kotlin.
-* **Building the robot:** We will aim to create similar lessons on the mechanical and electrical elements of robot construction in a subsequent series.
+* **Building the robot:** The focus here is on programming the robot.
 
 Here is an outline of the lessons:
 
@@ -24,7 +24,7 @@ Here is an outline of the lessons:
 1. **Path tracking** is an core element of many robots and involves making the robot track a pre-defined path. You will learn the basic elements of path tracking and the complexity of doing this well.
 1. **Object recognition** sets up a simple vision pipeline integrated with your robot to recognize objects of a certain color.
 
-In this first lesson, you do not need any robot. We will help you started with the prerequisites on your laptop. You need a **Windows 10** laptop wth 4GB of memory or more, and 50GB or more of free disk space. You cannot use a Mac for these lessons. Follow the steps below.
+In this first lesson, you do not need any robot. You will set up the prerequisites on your laptop. You need a **Windows 10** laptop wth 4GB of memory or more, and 50GB or more of free disk space. You cannot use a Mac for these lessons. Follow the steps below.
 
 ## Install JDK 8
 
@@ -33,8 +33,8 @@ The Java Development Kit (JDK) is the set of development tools and runtime for J
 1. Uninstall any older version of Java that you may have on your machine. Look for older versions in `Apps and features` under `Control panel`.
 1. You will need `JDK 8` for our lessons. You cannot use `JDK 9` or `JDK 10`. To download `JDK 8`, go to this [location](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Look for `Java SE Development Kit 8u172` or a later version, and then download the `Windows x64` version of the JDK.
 1. Launch the installer, run through the steps accepting defaults.
-1. Set up `JAVA_HOME` and `Path` system environment variables. To do this, look for `System variables` in the Windows search box. In the `System Properties` dialog, and open `Environment Variables`. Then set a new system variable `JAVA_HOME` to `C:\Program Files\Java\jdk1.8.0_172` or whatever location your JDK is installed to. Edit the `Path` system variable to include `C:\Program Files\Java\jdk1.8.0_172\bin` or the bin folder of your JDK.
-1. To verify the installation, open a command promot, and type `java -version`. You should see the java version that you installed.
+1. Set up `JAVA_HOME` and `Path` system environment variables. To do this, look for `System variables` in the Windows search box. In the `System Properties` dialog, open `Environment Variables`. Then set a new system variable `JAVA_HOME` to `C:\Program Files\Java\jdk1.8.0_172` or whatever location your JDK is installed to. Edit the `Path` system variable to include `C:\Program Files\Java\jdk1.8.0_172\bin` or the bin folder of your JDK.
+1. To verify the installation, open a new command prompt, and type `java -version`. You should see the java version that you installed.
 
 ## Install IntelliJ IDEA
 
@@ -52,7 +52,7 @@ In order to download the lessons and code from this repository, you need to have
 
 1. Get the latest version of Git for Windows from this [location](https://git-scm.com/download/win).
 1. Launch the installer, run through the steps accepting defaults.
-1. To test the installation, open a command prompt and type `git --version`. If you see the version of Git, then you are all set.
+1. To test the installation, open a new command prompt and type `git --version`. If you see the version of Git, then you are all set.
 
 ## Install FRC Update Suite
 
