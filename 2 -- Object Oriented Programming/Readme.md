@@ -17,4 +17,4 @@
 
 1. Experiment with variations of `Robot` and `GreenHope` class to answer the following questions:
     1. Can you change a variable defined in the base class from a method in a derived class?
-    1. Can you force the implementation of a method in the base class to be invoked wven when using an object of the derived class?
+    1. Can you force the implementation of a method in the base class to be invoked when when using an object of the derived class?
