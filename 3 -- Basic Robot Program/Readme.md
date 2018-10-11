@@ -15,7 +15,7 @@
     1. IntelliJ will now proceed to setup the project. If prompted for "Import Gradle" vs "Enable Auto Import" click "Enable Auto Import".
     1. It will take some time for IntelliJ to download the required dependencies. Once everything is finished, you will be notified.
 
-1. Build and Deploy
+1. Deploy
     1. The code in `src/main/java/org/ghrobotics/robot/Robot.java` is setup so that you can drive the robot around using an Xbox controller. To deploy this code onto the robot, open a terminal window to the project location (Alt-F12 in IntelliJ for the embedded terminal window if you don't want to use an extermal window) and type in the following command.
     
     `./gradlew deploy`
