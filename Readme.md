@@ -4,3 +4,5 @@ This repository contains all links to the FRC Team 5190 Programming Training res
 Java 101    | FRC Programming
 ------------|----------------
 [Variables](https://drive.google.com/file/d/1NtKOmOBkyREgWU5UOGqX2s4kXr_GxVzd/view?usp=sharing) | [Basic Robot](https://drive.google.com/file/d/1apG1lrCPtRvAkbNKyBClzNfjb2JUU1H7/view?usp=sharing)
+
+The complete Google Drive folder for all training resources can be found [here](https://drive.google.com/drive/folders/1LuSwf1PRrU6uXvdZcEabqI1LIIo6Faiu?usp=sharing)
