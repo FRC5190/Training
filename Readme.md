@@ -1,5 +1,5 @@
 # Training
-## This repository contains all links to the FRC Team 5190 Programming Training resources.
+This repository contains all links to the FRC Team 5190 Programming Training resources.
 
 Java 101    | FRC Programming
 ------------|----------------
