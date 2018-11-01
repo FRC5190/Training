@@ -3,6 +3,8 @@ This repository contains all links to the FRC Team 5190 Programming Training res
 
 ## Java programming
 
+If you are not proficient with Java, you must go through this lesson path. This self-guided learning path helps you learn Java at your own pace, and helps you have more time building robot during build time. Completing these topics will enable you to know core Java syntax, understand usage of built-in data types, and help you implement new ones. It will provide the foundation to help you take additional advanced Java modules and to perform introductory robotic programming.
+
 | Self-study | Build space review | Answers to exercises |
 |------------|--------------------|----------------------|
 | 1. [Hello world](https://docs.oracle.com/javase/tutorial/getStarted/application/index.html) | | |
@@ -25,6 +27,8 @@ This repository contains all links to the FRC Team 5190 Programming Training res
 | 18. [Collections](https://docs.oracle.com/javase/tutorial/collections/index.html) | | |
 
 ## FRC programming
+
+If you have reached a certain level of proficiency with Java (e.g., lesson 10 in the Java programming learning path), you can get started with the FRC programming learning path. This is mainly a mentor/veteran student led training; it will start with the basics of robotics programming, and will go into more advanced topics such as vision and path tracking as we progress.
 
 | Lesson | Answers to exercises |
 |--------|----------------------|
